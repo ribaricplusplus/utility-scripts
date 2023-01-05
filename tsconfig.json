@@ -1,0 +1,16 @@
+{
+	"extends": "@tsconfig/node18/tsconfig.json",
+	"compilerOptions": {
+		"target": "ES2022",
+		"declaration": true,
+		"declarationMap": true,
+		"outDir": "build/",
+		"rootDir": "src/",
+		"jsx": "preserve",
+		"noImplicitAny": false,
+		"emitDecoratorMetadata": true,
+		"experimentalDecorators": true,
+		"typeRoots": [ "./types", "./node_modules/@types" ]
+	},
+	"include": [ "src/**/*" ]
+}

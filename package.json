@@ -1,0 +1,27 @@
+{
+	"name": "scripts",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"devDependencies": {
+		"@tsconfig/node18": "^1.0.1",
+		"@wordpress/scripts": "^25.1.0",
+		"concurrently": "^7.6.0",
+		"esbuild": "^0.16.14",
+		"prettier": "npm:wp-prettier@2.6.2",
+		"typescript": "^4.9.4"
+	},
+	"scripts": {
+		"start": "tsc --watch",
+		"build": "tsc --clean; tsc",
+		"format-js": "wp-scripts format 'src/**/*' 'package.json'",
+		"format": "concurrently 'npm:format-*'"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"inversify": "^6.0.1",
+		"reflect-metadata": "^0.1.13"
+	}
+}
